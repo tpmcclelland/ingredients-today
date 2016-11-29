@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ShoppingList from './components/ShoppingList'
 
 ReactDOM.render(
-    <h1>My shopping list</h1>,
+    <ShoppingList />,
     document.getElementById('shopping')
 )
 
