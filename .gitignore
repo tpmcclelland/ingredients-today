@@ -15,3 +15,13 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+/db/structure.sql
+
+# Ignore application configuration
+/config/application.yml
+# Added by webpack-rails
+/node_modules
+/public/webpack
+npm-debug.log
+yarn-error.log
