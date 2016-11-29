@@ -14,9 +14,11 @@
 
   <body>
     <%= render "layouts/header" %>
-    <main>
-      <%= render "layouts/leftsidebar" %>
-      <%= yield %>
+    <main class="row">
+        <%= render "layouts/leftsidebar" %>
+        <div class="col-xs-12">
+            <%= yield %>
+        </div>
     </main>
 
     <script src="https://use.fontawesome.com/0de54c62ea.js"></script>
