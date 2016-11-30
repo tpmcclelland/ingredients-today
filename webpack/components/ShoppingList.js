@@ -96,6 +96,13 @@ class ShoppingList extends Component {
         // })
         return <div>
             {displayList}
+            <div className="row col-xs-offset-3">
+            <button className="col-xs-4" onClick={() => window.print()}>Print List</button>
+            <form className="col-xs-4" action="#schedule">
+                <button className="col-xs-12"type="submit">Schedule Delivery</button>
+            </form>
+            {/* <button className="col-xs-4" href="#schedule">Schedule Delivery</button> */}
+            </div>
         </div>
     }
 }
