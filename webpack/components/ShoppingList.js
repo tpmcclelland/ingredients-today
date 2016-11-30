@@ -34,15 +34,22 @@ class ShoppingList extends Component {
         // })
         // console.log(listArray)
         var displayList = this.state.results.map((item, i) => {
-            return <div className="col-xs-12" key={i}>
-                <p>{item.recipeName}</p>
-                <p>{item.ingredients}</p>
-            </div>
+            var splitIngredients = item.ingredients.map((ingredient, i) => {
+                // var pos = ingredient.indexOf("pickle");
+                // console.log(pos)
+                return <div className="row" key={i}>
+                    <div className="col-xs-8 col-xs-offset-2 listItem">
+                        {/* Quantity: <input type="text" value="1" /> */}
+                        <h2>{ingredient}</h2>
+                    </div>
+                </div>
+            })
+            return splitIngredients
         })
         return <div>
             {displayList}
         </div>
-}
+    }
 }
 
 export default ShoppingList

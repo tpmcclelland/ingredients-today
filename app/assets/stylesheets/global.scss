@@ -1,4 +1,5 @@
 @import "variables";
+@import "shoppingList";
 
 * { box-sizing: border-box; }
 .lightBlue-background { background-color: $lightBlue; }
@@ -9,6 +10,8 @@
 .green { color: $green; }
 .red { color: $red; }
 .yellow { color: $yellow; }
+.overflow-scroll { overflow-y: scroll; }
+.push-down { padding-top: 50px; }
 // end global
 
 // start top navbar
@@ -51,6 +54,9 @@
     }
 }
 @media (min-width: 768px) {
+    .push-down {
+        padding-top: 10px;
+    }
     .side-nav {
         display: block;
         margin: 0 auto;
