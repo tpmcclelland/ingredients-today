@@ -94,7 +94,7 @@ class ShoppingList extends Component {
         //     })
         //     return splitIngredients
         // })
-        return <div>
+        return <div className="anchor-top-margin">
             {displayList}
             <div className="row col-xs-offset-3">
             <button className="col-xs-4" onClick={() => window.print()}>Print List</button>

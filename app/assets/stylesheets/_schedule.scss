@@ -1,6 +1,7 @@
-#shopping {
-    .listItem {
+#schedule {
+    .well {
             border: 1px solid black;
+            background-color: rgba(0,0,0,0);
             border-radius: 5px;
             margin-top: 2px;
             margin-bottom: 2px;
@@ -8,5 +9,4 @@
     .anchor-top-margin {
         margin-top: 150px;
     }
-
 }
