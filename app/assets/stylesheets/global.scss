@@ -1,5 +1,6 @@
 @import "variables";
 @import "shoppingList";
+@import "recipes";
 
 * { box-sizing: border-box; }
 .lightBlue-background { background-color: $lightBlue; }
@@ -12,6 +13,7 @@
 .yellow { color: $yellow; }
 .overflow-scroll { overflow-y: scroll; }
 .push-down { padding-top: 50px; }
+.bring-to-front { z-index: 0; }
 // end global
 
 // start top navbar
@@ -28,7 +30,6 @@
 // start left navbar
 .left-side-navbar {
     position: fixed;
-    height: 100vh;
     top: 55px;
     z-index: 1;
 }
@@ -54,6 +55,12 @@
     }
 }
 @media (min-width: 768px) {
+    .left-side-navbar {
+        height: 100vh;
+    }
+    .bring-to-front {
+        z-index: 1;
+    }
     .push-down {
         padding-top: 10px;
     }

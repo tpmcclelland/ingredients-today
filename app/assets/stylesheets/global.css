@@ -1,3 +1,51 @@
+#shopping .listItem {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#recipes .search-button {
+  margin-left: 2px;
+}
+
+#recipes .recipe-panel {
+  margin-bottom: 15px;
+}
+
+#recipes .recipe-panel img {
+  border: 5px outset;
+  border-radius: 5px;
+  width: 100%;
+  height: 250px;
+}
+
+#recipes .recipe-panel .recipe-title {
+  background-color: rgba(142, 142, 142, 0.85);
+  position: absolute;
+  padding: 10px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  font-size: 17px;
+  color: white;
+  margin: 0;
+}
+
+#recipes .recipe-directions {
+  width: 100%;
+  height: 250px;
+}
+
+.modal-image {
+  width: 100%;
+  height: 300px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,6 +90,10 @@
   padding-top: 50px;
 }
 
+.bring-to-front {
+  z-index: 0;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -54,7 +106,6 @@
 
 .left-side-navbar {
   position: fixed;
-  height: 100vh;
   top: 55px;
   z-index: 1;
 }
@@ -85,6 +136,12 @@
 }
 
 @media (min-width: 768px) {
+  .left-side-navbar {
+    height: 100vh;
+  }
+  .bring-to-front {
+    z-index: 1;
+  }
   .push-down {
     padding-top: 10px;
   }
