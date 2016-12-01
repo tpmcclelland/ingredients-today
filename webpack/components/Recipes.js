@@ -68,9 +68,12 @@ class Recipes extends Component {
         recipeOwner: response.source.sourceDisplayName,
       })
     }
-    preventDefault(e) {
+    search(e) {
       e.preventDefault()
       this.fetchRecipes()
+      this.setState({
+          searchTerm: ''
+      })
     }
     updateSearchTerm(e) {
         this.setState({
@@ -107,7 +110,7 @@ class Recipes extends Component {
                 <h1 id="recipe-anchor" className="anchor">Recipes</h1>
             </div>
             <div className="col-sm-3 col-xs-6 search-bar">
-                <form className="navbar-form navbar-left" onSubmit={this.preventDefault}>
+                <form className="navbar-form navbar-left" onSubmit={this.search}>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Search" value={this.state.searchTerm} onChange={this.updateSearchTerm} />
                     </div>
